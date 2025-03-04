@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 - 源的个人空间</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 装饰元素 -->
+        <div class="decorations">
+            <img src="images/decorations/cat-reading.gif" alt="看书的猫" class="decoration cat-reading">
+            <img src="images/decorations/pencil.gif" alt="铅笔" class="decoration pencil">
+            <img src="images/decorations/book.gif" alt="书本" class="decoration book">
+            <img src="images/decorations/coffee.gif" alt="咖啡" class="decoration coffee">
+            <img src="images/decorations/plant.gif" alt="植物" class="decoration plant">
+        </div>
+        <!-- 导航栏 -->
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-item">返回首页</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 作品集内容 -->
+        <div class="portfolio-page">
+            <h1 class="portfolio-title">作品集</h1>
+            
+            <!-- 创建新文档按钮 -->
+            <div class="create-section">
+                <button id="createDoc" class="create-btn">
+                    <span class="plus-icon">+</span>
+                    创建新文档
+                </button>
+            </div>
+
+            <!-- 文档列表 -->
+            <div class="docs-grid" id="docsContainer">
+                <!-- 文档将通过 JavaScript 动态加载 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 创建文档弹窗 -->
+    <div id="createModal" class="modal">
+        <div class="modal-content">
+            <h2>创建新文档</h2>
+            <input type="text" id="docTitle" placeholder="文档标题">
+            <textarea id="docContent" placeholder="文档内容"></textarea>
+            <div class="modal-buttons">
+                <button id="cancelCreate" class="cancel-btn">取消</button>
+                <button id="confirmCreate" class="confirm-btn">创建</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/portfolio.js"></script>
+</body>
+</html> 
